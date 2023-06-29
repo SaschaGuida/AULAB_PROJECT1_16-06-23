@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+/* stile del body */
+body {
+    background-color: #ffffff;
+    color: #212529;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 200px;
+
+}
+
+/* Stile per l'header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* stile del menù */
+/* Nascondi il menù a tendina */
+nav ul ul {
+    display: none;
+}
+
+/* Mostra il menù a tendina quando si passa sopra l'elemento principale */
+nav ul li:hover>ul {
+    display: block;
+}
+
+/* Stile del menù principale */
+nav ul {
+    background: #ffffff;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+nav ul li {
+    float: left;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Stile del menù a tendina */
+nav ul ul {
+    background: #3E444A;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 10px 20px;
+    color: #FEED25;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 0 0 200px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.badge {
+    background-color: #1337c5;
+    color: #f2f2f2;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.code-html {
+    background: #3E444A;
+    color: #FEED25;
+}
+
+/* Stile per la sezione hero */
+.hero {
+    background-image: url(./img/blog-cta-background.jpg);
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #FEED25;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.cta-button {
+    background-color: transparent;
+    color: #FEED25;
+    border: 1px solid #FEED25;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+    background-color: #FEED25;
+    color: #000000;
+    
+}
+
+
+/* Stile per il footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex-basis: 30%;
+}
+
+.footer-center {
+    text-align: center;
+}
+.footer-center p {
+    color: #FEED25;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
